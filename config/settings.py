@@ -246,7 +246,7 @@ elif USE_MAIL_HOG:
 # Django Admin URL.
 ADMIN_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("""ixdlabs""", "developer@ixdlabs.lk")]
+ADMINS = [("""pasindu""")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 ADMIN_MODELS = [
@@ -307,7 +307,7 @@ SPECTACULAR_SETTINGS = {
     "COMPONENT_SPLIT_REQUEST": True,
     "SCHEMA_PATH_PREFIX": r"\/(api|admin\-api)\/v[0-9]",
     "SORT_OPERATION_PARAMETERS": True,
-    "CONTACT": {"name": "kdsuneraavinash", "email": "sunera@ixdlabs.com"},
+    "CONTACT": {"name": "pasindusandaruwan"},
     "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAdminUser"],
     "SERVE_AUTHENTICATION": ["rest_framework.authentication.SessionAuthentication"],
 }
