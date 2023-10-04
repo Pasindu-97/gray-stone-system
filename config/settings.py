@@ -90,6 +90,10 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "apps.api_auth.apps.ApiAuthConfig",
     "apps.users.apps.UsersConfig",
+    "apps.employees.apps.EmployeesConfig",
+    "apps.projects.apps.ProjectsConfig",
+    "apps.quotations.apps.QuotationsConfig",
+    "apps.stakeholders.apps.StakeholdersConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_ADMIN_THEME_APPS + DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -247,6 +251,10 @@ ADMINS = [("""ixdlabs""", "developer@ixdlabs.lk")]
 MANAGERS = ADMINS
 ADMIN_MODELS = [
     ["Authentication/Authorization", ("Group", "User", "TokenProxy")],
+    ["Employees", ("Employee", "Attendance", "Salary")],
+    ["Projects", ("Task", "Project")],
+    ["Quotations", ("Item", "Quotation", "QuotationItem", "Invoice")],
+    ["Stakeholders", ("Client", "Supplier", "SupplierOrder")],
     ["Site Settings", ("Theme", "Site", "Config")],
 ]
 
